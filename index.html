@@ -10,37 +10,38 @@
 <body>
     <main>
         <div class="calculadora">
-            <div class="div-input"><input type="text" class="input-tela" ></div>
+            <div class="div-input">
+                <input type="text" class="input-tela"></div>
             <div class="botoes">
                 <div class="botoes-linha-1">
-                    <button class="botao-calc">C</button>
-                    <button class="botao-calc">(</button>
-                    <button class="botao-calc">)</button>
-                    <button class="botao-calc">/</button>
+                    <button class="botao-calc"  onclick="visorDel()">C</button>
+                    <button class="botao-calc"  onclick="visorAddParen('esq')">(</button>
+                    <button class="botao-calc" onclick="visorAddParen('dir')">)</button>
+                    <button class="botao-calc" onclick="visorAdd('/')">/</button>
                 </div>
                 <div class="botoes-linha-2">
-                    <button class="botao-calc">7</button>
-                    <button class="botao-calc" onclick="visorAdd()">8</button>
-                    <button class="botao-calc">9</button>
-                    <button class="botao-calc">x</button>
+                    <button class="botao-calc" onclick="visorAdd(7)">7</button>
+                    <button class="botao-calc" onclick="visorAdd(8)">8</button>
+                    <button class="botao-calc" onclick="visorAdd(9)">9</button>
+                    <button class="botao-calc" onclick="visorAdd('x')">x</button>
                 </div>
                 <div class="botoes-linha-2">
-                    <button class="botao-calc">4</button>
-                    <button class="botao-calc">5</button>
-                    <button class="botao-calc">6</button>
-                    <button class="botao-calc">-</button>
+                    <button class="botao-calc" onclick="visorAdd(4)">4</button>
+                    <button class="botao-calc" onclick="visorAdd(5)">5</button>
+                    <button class="botao-calc" onclick="visorAdd(6)">6</button>
+                    <button class="botao-calc" onclick="visorAdd('-')">-</button>
                 </div>
                 <div class="botoes-linha-3">
-                    <button class="botao-calc">1</button>
-                    <button class="botao-calc">2</button>
-                    <button class="botao-calc">3</button>
-                    <button class="botao-calc">+</button>
+                    <button class="botao-calc" onclick="visorAdd(1)">1</button>
+                    <button class="botao-calc" onclick="visorAdd(2)">2</button>
+                    <button class="botao-calc" onclick="visorAdd(3)">3</button>
+                    <button class="botao-calc" onclick="visorAdd('+')">+</button>
                 </div>
                 <div class="botoes-linha-4">
                     <button class="botao-calc">x²</button>
                     <button class="botao-calc">0</button>
                     <button class="botao-calc">,</button>
-                    <button class="botao-calc">=</button>
+                    <button class="botao-calc" onclick="mostrar()">=</button>
                 </div>
             </div>
         </div>
