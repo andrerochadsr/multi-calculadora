@@ -2,25 +2,24 @@
     padding: 0;
     margin: 0;
 }
-
-
-main {
+html {
     background-color: #222;
+}
+main {
+    
     display: flex;
     justify-content: center;
 }
-
 .calculadora {
     margin-top: 30px;
     margin-bottom: 20px;
-    background-color: aqua;
+    background: linear-gradient(45deg, rgb(49, 49, 49), rgb(136, 136, 138));
     width: 350px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
 }
-
 .input-tela {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -30,11 +29,13 @@ main {
     border-radius: 10px;
     outline: none;
 }
-
 .botoes {
     margin-bottom: 20px;
 }
-
+.botao-calc:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+}
 .botao-calc {
     width: 60px;
     height: 60px;

@@ -11,7 +11,7 @@
     <main>
         <div class="calculadora">
             <div class="div-input">
-                <input type="text" class="input-tela"></div>
+                <input type="text" class="input-tela" placeholder="Digite um número"></div>
             <div class="botoes">
                 <div class="botoes-linha-1">
                     <button class="botao-calc"  onclick="visorDel()">C</button>
@@ -23,7 +23,7 @@
                     <button class="botao-calc" onclick="visorAdd(7)">7</button>
                     <button class="botao-calc" onclick="visorAdd(8)">8</button>
                     <button class="botao-calc" onclick="visorAdd(9)">9</button>
-                    <button class="botao-calc" onclick="visorAdd('x')">x</button>
+                    <button class="botao-calc" onclick="visorAdd('*')">x</button>
                 </div>
                 <div class="botoes-linha-2">
                     <button class="botao-calc" onclick="visorAdd(4)">4</button>
@@ -38,10 +38,10 @@
                     <button class="botao-calc" onclick="visorAdd('+')">+</button>
                 </div>
                 <div class="botoes-linha-4">
-                    <button class="botao-calc">x²</button>
-                    <button class="botao-calc">0</button>
-                    <button class="botao-calc">,</button>
-                    <button class="botao-calc" onclick="mostrar()">=</button>
+                    <button class="botao-calc" onclick="visorAdd('**2')">x²</button>
+                    <button class="botao-calc" onclick="visorAdd(0)">0</button>
+                    <button class="botao-calc" onclick="visorAdd('.')">.</button>
+                    <button class="botao-calc" onclick="resultado()">=</button>
                 </div>
             </div>
         </div>
